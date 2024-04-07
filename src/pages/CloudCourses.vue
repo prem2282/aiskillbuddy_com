@@ -7,11 +7,25 @@
         group="somegroup"
         :key="course.title"
         class="shadow-1 overflow-hidden course-expansion-item text-subtitle1 q-ma-md"
-        :icon="course.icon"
-        :label="course.title"
-        header-class="buddy-blue-3 text-white text-h5"
-        expand-icon-class="text-white"
+        header-class="buddy-blue-4 text-white text-h5"
       >
+        <template v-slot:header>
+          <q-item-section avatar>
+            <q-avatar :icon="course.icon" text-color="indigo-2" />
+          </q-item-section>
+
+          <q-item-section class="text-indigo-3 text-h6">{{
+            course.title
+          }}</q-item-section>
+          <q-item-section side>
+            <q-chip
+              class="q-pa-sm q-mx-sm shadow-3 text-indigo-3 text-subtitle2"
+              outline
+              >{{ course.duration }}</q-chip
+            >
+          </q-item-section>
+        </template>
+
         <q-card>
           <q-card-section class="bg-black text-blue-1 central-container">
             <div
@@ -46,7 +60,7 @@ import { ref, onBeforeUnmount } from "vue";
 import { defineComponent } from "vue";
 
 export default defineComponent({
-  name: "DeveloperCourses",
+  name: "CloudCourses",
   data() {
     return {
       courses: [

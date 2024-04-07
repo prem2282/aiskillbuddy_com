@@ -4,17 +4,36 @@
     <q-list bordered>
       <q-expansion-item
         v-for="course in courses"
-        group="somegroup"
         :key="course.title"
         class="shadow-1 overflow-hidden course-expansion-item text-subtitle1 q-ma-md"
-        :icon="course.icon"
-        :label="course.title"
         header-class="buddy-blue-3 text-white text-h5"
-        expand-icon-class="text-white"
       >
+        <template v-slot:header>
+          <q-item-section avatar>
+            <q-avatar :icon="course.icon" text-color="indigo-2" />
+          </q-item-section>
+
+          <q-item-section class="text-indigo-3 text-h6 header-title-box">
+            <div>
+              {{ course.title }}
+            </div>
+            <div class="text-subtitle2 text-grey">
+              {{ course.duration }}
+            </div>
+          </q-item-section>
+          <q-item-section side> </q-item-section>
+        </template>
         <q-card>
           <q-card-section class="bg-black text-blue-1 central-container">
             <div class="q-pa-md justify-center">{{ course.description }}</div>
+          </q-card-section>
+
+          <q-card-section
+            class="no-padding bg-black"
+            v-for="image in course.images"
+            :key="image"
+          >
+            <img src="~assets/FSDJourney.gif" class="course-resource" />
           </q-card-section>
 
           <q-card-section class="bg-black text-blue-1 central-container">
@@ -87,6 +106,7 @@ export default defineComponent({
           icon: "join_full",
           fee: "Rs.60,000 + GST",
           duration: "6 months",
+          images: ["~assets/FSDJourney.gif"],
           sections: [
             {
               name: "Backend",
@@ -118,6 +138,7 @@ export default defineComponent({
           fee: "Rs.30,000 + GST",
           duration: "3 months",
           icon: "dns",
+          images: [],
           sections: [
             {
               name: "Backend",
@@ -244,12 +265,24 @@ export default defineComponent({
   methods: {},
   onBeforeUnmount() {},
   mounted() {},
+  computed: {
+    orientation() {
+      return this.$q.screen.lt.md ? "vertical" : "horizontal";
+    },
+    mobile() {
+      return this.$q.screen.lt.md;
+    },
+  },
 });
 </script>
 <style scoped>
 .hr-class {
   background-color: rgb(23, 22, 22);
   margin: 0;
+}
+
+.header-title-box {
+  display: block;
 }
 
 .course-header {
@@ -272,6 +305,9 @@ export default defineComponent({
   margin: 0rem 0;
 }
 
+.course-resource {
+  max-width: 100%;
+}
 @media (max-width: 600px) {
   .course-expansion-item {
     width: 100vw;
