@@ -13,12 +13,20 @@
 
         <q-toolbar-title> AI Skill Buddy </q-toolbar-title>
         <q-btn
+          class="q-pa-md"
           flat
           dense
-          round
           no-caps
           label="Academics"
-          @click="toggleLeftDrawer"
+          @click="goToAcamadics"
+        />
+        <q-btn
+          class="q-pa-md"
+          flat
+          dense
+          no-caps
+          label="Login"
+          @click="goToLogin"
         />
       </q-toolbar>
     </q-header>
@@ -38,7 +46,11 @@ export default defineComponent({
   components: {},
 
   setup() {
-    return {};
+    return {
+      goToAcamadics() {
+        window.open("https://academy.aiskillbuddy.com", "_blank");
+      },
+    };
   },
 });
 </script>
