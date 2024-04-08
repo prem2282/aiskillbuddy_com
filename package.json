@@ -1,8 +1,8 @@
 {
-  "name": "skillbuddyquiz",
+  "name": "aiskillbuddy.com",
   "version": "0.0.1",
-  "description": "Quiz for SkillBuddy",
-  "productName": "SkillBuddy Quiz",
+  "description": "AI Skill Buddy",
+  "productName": "AI Skill Buddy",
   "author": "PremAnand",
   "private": true,
   "scripts": {

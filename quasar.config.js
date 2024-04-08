@@ -58,7 +58,6 @@ module.exports = configure(function (/* ctx */) {
           process.env.VUE_APP_USER_STORE_LAMBDA_URL,
         VUE_APP_GOOGLE_CLIENT_ID: process.env.VUE_APP_GOOGLE_CLIENT_ID,
         VUE_APP_ANACONDA: process.env.VUE_APP_ANACONDA,
-        VUE_APP_USER_QUIZ_LAMBDA_URL: process.env.VUE_APP_USER_QUIZ_LAMBDA_URL,
         // ...
       },
       target: {
@@ -212,7 +211,7 @@ module.exports = configure(function (/* ctx */) {
       builder: {
         // https://www.electron.build/configuration/configuration
 
-        appId: "skillbuddyquiz",
+        appId: "aiskillbuddy",
       },
     },
 
