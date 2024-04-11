@@ -2,6 +2,15 @@
   <q-layout view="lHh Lpr lFf">
     <q-header elevated>
       <q-toolbar>
+        <q-toolbar-title> AI Skill Buddy </q-toolbar-title>
+        <q-btn
+          class="q-pa-md"
+          flat
+          dense
+          no-caps
+          label="Academy (CBSE)"
+          @click="goToAcamadics"
+        />
         <q-btn
           flat
           dense
@@ -9,24 +18,6 @@
           icon="menu"
           aria-label="Menu"
           @click="toggleLeftDrawer"
-        />
-
-        <q-toolbar-title> AI Skill Buddy </q-toolbar-title>
-        <q-btn
-          class="q-pa-md"
-          flat
-          dense
-          no-caps
-          label="Academics"
-          @click="goToAcamadics"
-        />
-        <q-btn
-          class="q-pa-md"
-          flat
-          dense
-          no-caps
-          label="Login"
-          @click="goToLogin"
         />
       </q-toolbar>
     </q-header>

@@ -3,6 +3,10 @@
     <q-image>
       <img class="flyer-card" src="~assets/flyer_1.png" alt="Quasar Logo" />
     </q-image>
+
+    <q-image>
+      <img class="flyer-card" src="~assets/flyer_2.png" alt="Quasar Logo" />
+    </q-image>
   </div>
 </template>
 <script>
@@ -23,5 +27,11 @@ export default defineComponent({
 .flyer-card {
   max-width: 100%;
   max-height: 90vh;
+}
+
+@media (max-width: 600px) {
+  .flyer-section {
+    flex-direction: column;
+  }
 }
 </style>

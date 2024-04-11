@@ -14,16 +14,15 @@
             <q-avatar :icon="course.icon" text-color="indigo-2" />
           </q-item-section>
 
-          <q-item-section class="text-indigo-3 text-h6">{{
-            course.title
-          }}</q-item-section>
-          <q-item-section side>
-            <q-chip
-              class="q-pa-sm q-mx-sm shadow-3 text-indigo-3 text-subtitle2"
-              outline
-              >{{ course.duration }}</q-chip
-            >
+          <q-item-section class="text-indigo-3 text-h6 header-title-box">
+            <div>
+              {{ course.title }}
+            </div>
+            <div class="text-subtitle2 text-grey">
+              {{ course.duration }}
+            </div>
           </q-item-section>
+          <q-item-section side> </q-item-section>
         </template>
 
         <q-card>
@@ -37,12 +36,6 @@
             </div>
           </q-card-section>
 
-          <q-card-section
-            class="bg-black text-blue-1 text-h6 central-container"
-          >
-            Duration : {{ course.duration }}
-          </q-card-section>
-          <hr class="hr-class" />
           <q-card-section
             class="bg-black text-blue-1 text-h6 central-container"
           >
