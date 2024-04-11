@@ -56,18 +56,16 @@
                   <div class="central-container section-name">
                     {{ section.name }}
                   </div>
-                  <div class="central-container-row">
-                    <q-flex wrap justify-center style="max-width: 90%">
-                      <q-chip
-                        class="q-pa-sm q-mx-sm shadow-3 text-blue-3 text-subtitle2"
-                        outline
-                        :class="section.class"
-                        v-for="tag in section.tags"
-                        :key="tag"
-                      >
-                        {{ tag }}
-                      </q-chip>
-                    </q-flex>
+                  <div class="tag-container">
+                    <q-chip
+                      class="q-pa-md q-ma-sm shadow-3 text-blue-3 text-h6 text-weight-semibold"
+                      outline
+                      :class="section.class"
+                      v-for="tag in section.tags"
+                      :key="tag"
+                    >
+                      {{ tag }}
+                    </q-chip>
                   </div>
                 </div>
               </div>
@@ -307,6 +305,15 @@ export default defineComponent({
 
 .course-resource {
   max-width: 100%;
+}
+
+.tag-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0.25rem 0;
+  justify-content: center;
+  align-content: stretch;
 }
 @media (max-width: 600px) {
   .course-expansion-item {
