@@ -289,7 +289,6 @@ export default defineComponent({
   text-align: center;
   margin: 1rem 0 0 0;
   color: gainsboro;
-  font-family: "Roboto", sans-serif;
   letter-spacing: 0.25em;
 }
 .course-expansion-item {

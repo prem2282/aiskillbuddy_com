@@ -59,7 +59,7 @@ export default defineComponent({
       courses: [
         {
           title: "AWS Cloud Practitioner",
-          icon: "join_full",
+          icon: "cloud",
           fee: "Rs.30,000 + GST",
           duration: "3 months",
           description: [
@@ -72,7 +72,7 @@ export default defineComponent({
           title: "AWS Certified Developer Associate",
           fee: "Rs.30,000 + GST",
           duration: "3 months",
-          icon: "dns",
+          icon: "code",
           sections: [
             {
               name: "Backend",
@@ -103,7 +103,7 @@ export default defineComponent({
           title: "AWS Certified Solutions Architect Associate",
           fee: "Rs.30,000 + GST",
           duration: "3 months",
-          icon: "web",
+          icon: "architecture",
           sections: [
             {
               name: "Frontend",
@@ -152,7 +152,6 @@ export default defineComponent({
   text-align: center;
   margin: 1rem 0 0 0;
   color: gainsboro;
-  font-family: "Roboto", sans-serif;
   letter-spacing: 0.25em;
 }
 .course-expansion-item {

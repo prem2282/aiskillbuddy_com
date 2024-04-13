@@ -5,25 +5,23 @@
       style="text-decoration: none; color: inherit"
     >
       <q-chip
-        class="q-pa-md text-subtitle2"
+        class="buddy-blue-7 q-pa-md text-subtitle2"
         text-color="white"
         icon="phone"
-        color="primary"
         >+91 87542 88702</q-chip
       >
     </a>
-    <a href="https://maps.app.goo.gl/wjFeAHBukMuEoU6K7" target="_blank">
+    <a href="https://maps.app.goo.gl/KKVyKewyaktA9JRc8" target="_blank">
       <q-chip
-        class="buddy-blue-5 q-pa-md q-ma-md text-subtitle2"
+        class="buddy-blue-7 q-pa-md q-my-md text-subtitle2"
         text-color="white"
         icon="location_on"
         clickable
+        glossy
       >
         Ramanathapuram, Coimbatore
       </q-chip>
     </a>
-
-    ]
   </div>
 </template>
 <script>
