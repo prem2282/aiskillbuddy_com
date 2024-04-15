@@ -41,7 +41,8 @@
       leave-active-class="animated fadeOut"
     >
       <a
-        href="mailto:support@aiskillbuddy.com"
+        href="mailto:support@aiskillbuddy.com?subject=I%20am%20interested!&body=Hello%20Buddy,%0AI%20am%20interested%20in%20knowing%20more%20about%20your%20training%20programs.%0AI%20can%20be%20reached%20at%20:%20
+%0AThank%20you,"
         style="text-decoration: none; color: inherit"
       >
         <q-chip
