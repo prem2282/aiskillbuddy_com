@@ -1,5 +1,8 @@
 <template>
-  <div class="flyer-section" style="box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5)">
+  <div
+    class="flyer-section q-my-lg"
+    style="box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5)"
+  >
     <q-image>
       <img class="flyer-card" src="~assets/flyer_1.png" alt="Quasar Logo" />
     </q-image>
@@ -21,7 +24,7 @@ export default defineComponent({
 <style scoped>
 .flyer-section {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
 .flyer-card {

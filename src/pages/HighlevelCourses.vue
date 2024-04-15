@@ -19,7 +19,7 @@
             enter-active-class="animated zoomIn"
             leave-active-class="animated fadeOut"
           >
-            <span class="logo-text">AI Skill Buddy</span>
+            <span class="logo-text breathe">AI Skill Buddy</span>
           </transition>
         </div>
       </div>
@@ -139,5 +139,20 @@ export default defineComponent({
   .logo-card {
     max-width: 200px;
   }
+}
+
+@keyframes breathing-effect {
+  0%,
+  100% {
+    transform: scaleX(1); /* Original size */
+  }
+  50% {
+    transform: scaleX(1.1); /* 10% larger */
+  }
+}
+
+.breathe {
+  display: inline-block; /* Required for transform to work on span */
+  animation: breathing-effect 4s ease-in-out infinite; /* Adjust timing to suit */
 }
 </style>

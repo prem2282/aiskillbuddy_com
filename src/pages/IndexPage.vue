@@ -73,7 +73,8 @@ export default defineComponent({
   padding: 1rem;
   display: flex;
   justify-content: center;
-  font-size: 1.5em;
+  font-size: 1.2em;
+  font-weight: 500;
 }
 
 @media (max-width: 600px) {
