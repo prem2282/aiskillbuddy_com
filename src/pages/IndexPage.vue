@@ -9,6 +9,14 @@
       </div>
       <HighlevelCourses />
       <RequestCallback />
+      <div class="q-pa-md youtube-container">
+        <div class="video-title">Full Stack Developer Course (Intro)</div>
+        <q-video
+          class="youtube-player"
+          :ratio="16 / 9"
+          src="https://www.youtube.com/embed/UM3uCGM-AUE"
+        />
+      </div>
       <CoursesSection ref="coursesSection" />
       <FlyerSection />
     </div>
@@ -76,10 +84,34 @@ export default defineComponent({
   font-size: 1.2em;
   font-weight: 500;
 }
+.video-title {
+  font-size: 1.5em;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.youtube-container {
+  width: 500px;
+  margin: auto;
+}
+
+.youtube-player {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 @media (max-width: 600px) {
   .overall-container {
     max-width: 100vw;
+  }
+
+  .youtube-container {
+    width: 100%;
+    margin: auto;
   }
 }
 </style>
