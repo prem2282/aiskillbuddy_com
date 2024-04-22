@@ -10,6 +10,14 @@
       <HighlevelCourses />
       <RequestCallback />
       <div class="q-pa-md youtube-container">
+        <div class="video-title">About AI Skill Buddy</div>
+        <q-video
+          class="youtube-player"
+          :ratio="16 / 9"
+          src="https://www.youtube.com/embed/8mBzL5eyHOI"
+        />
+      </div>
+      <div class="q-pa-md youtube-container">
         <div class="video-title">Full Stack Developer Course (Intro)</div>
         <q-video
           class="youtube-player"
