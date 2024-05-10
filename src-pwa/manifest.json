@@ -1,9 +1,9 @@
 {
   "start_url": "/",
   "display": "standalone",
-  "short_name": "Academy Buddy",
-  "name": "AI Skill Buddy - Academy",
-  "description": "AI Powered Buddy for Academic Skill Development",
+  "short_name": "AI Skill Buddy",
+  "name": "AI Skill Buddy",
+  "description": "Where talent meets technology",
   "scope": "/",
   "orientation": "portrait",
   "background_color": "#ffffff",

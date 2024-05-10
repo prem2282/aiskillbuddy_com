@@ -2,23 +2,27 @@
   <q-layout view="lHh Lpr lFf">
     <q-header elevated>
       <q-toolbar>
-        <q-toolbar-title> AI Skill Buddy </q-toolbar-title>
-        <q-btn
+        <div>
+          <q-toolbar-title class="toolbar-title">
+            AI Skill Buddy
+          </q-toolbar-title>
+        </div>
+        <!-- <q-btn
           class="q-pa-md"
           flat
           dense
           no-caps
           label="Academy (CBSE)"
           @click="goToAcamadics"
-        />
-        <q-btn
+        /> -->
+        <!-- <q-btn
           flat
           dense
           round
           icon="menu"
           aria-label="Menu"
           @click="toggleLeftDrawer"
-        />
+        /> -->
       </q-toolbar>
     </q-header>
 
@@ -45,3 +49,11 @@ export default defineComponent({
   },
 });
 </script>
+
+<style scoped>
+.toolbar-title {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+}
+</style>
